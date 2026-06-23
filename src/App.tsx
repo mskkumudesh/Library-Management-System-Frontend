@@ -66,7 +66,7 @@ export default function App() {
         />
 
         <Route
-          path="/issuedbooks/active"
+          path="/borrow/active"
           element={
             <ProtectedRoute>
               <RoleRoute allow={["librarian"]}>
@@ -77,7 +77,7 @@ export default function App() {
         />
 
         <Route
-          path="/issuedbooks/mybooks"
+          path="/borrow/mybooks"
           element={
             <ProtectedRoute>
               <RoleRoute allow={["member"]}>

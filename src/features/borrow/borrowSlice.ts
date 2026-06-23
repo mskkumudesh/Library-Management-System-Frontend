@@ -38,7 +38,7 @@ export const fetchActiveLoans = createAsyncThunk<BorrowRecord[]>(
   "borrow/fetchActive",
   async (_, { rejectWithValue }) => {
     try {
-      const { data } = await api.get<BorrowRecord[]>("/issuedbooks/active");
+      const { data } = await api.get<BorrowRecord[]>("/borrow/active");
       return data;
     } catch (err: any) {
       return rejectWithValue(err.response?.data?.message || "Failed to load active loans");

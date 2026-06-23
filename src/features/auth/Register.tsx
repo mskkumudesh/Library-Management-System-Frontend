@@ -17,7 +17,7 @@ export default function Register() {
     e.preventDefault();
     const result = await dispatch(registerUser({ name, email, password, role }));
     if (registerUser.fulfilled.match(result)) {
-      navigate("/");
+      navigate("/login");
     }
   };
 

@@ -61,7 +61,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                to="/issuedbooks/active"
+                to="/borrow/active"
                 className="text-gray-700 hover:text-blue-600 font-medium transition"
               >
                 Issued Books
@@ -71,7 +71,7 @@ export default function Navbar() {
 
           {user?.role === "member" && (
             <Link
-              to="/issuedbooks/mybooks"
+              to="/borrow/mybooks"
               className="text-gray-700 hover:text-blue-600 font-medium transition"
             >
               My Books

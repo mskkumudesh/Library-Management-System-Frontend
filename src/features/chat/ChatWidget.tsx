@@ -75,7 +75,7 @@ export default function ChatWidget() {
             {loading && (
               <div className="flex justify-start">
                 <div className="bg-white border border-ink/10 rounded-lg px-3 py-2 text-sm text-ink/40">
-                  Searching the catalog…
+                  Loading
                 </div>
               </div>
             )}

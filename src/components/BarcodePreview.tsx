@@ -8,7 +8,6 @@ export default function BarcodePreview({ value }: { value: string }) {
     if (!svgRef.current) return;
 
     if (!value || value.length !== 13 || !/^\d{13}$/.test(value)) {
-      // Not a valid EAN-13 yet (e.g. still mid-typing) — clear the canvas quietly.
       svgRef.current.innerHTML = "";
       return;
     }
